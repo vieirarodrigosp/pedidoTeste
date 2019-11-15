@@ -1,0 +1,15 @@
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/configuration/SegurançaConfig.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/entity/ItemEntity.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/repository/PedidoRepository.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/repository/ItemRepository.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/PedidoTesteApplication.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/service/PedidoService.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/util/FerramentasSystemaUtil.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/mapper/ItemMapper.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/entity/PedidoEntity.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/configuration/DataConfiguration.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/domain/Pedido.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/controller/PedidoController.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/domain/Item.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/mapper/PedidoMapper.java
+/opt/repo/pedidoTeste/src/main/java/br/com/meuprojeto/pedidoTeste/configuration/SwaggerConfig.java

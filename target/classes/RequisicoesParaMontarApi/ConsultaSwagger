@@ -1,0 +1,3 @@
+curl -X GET \
+  http://localhost:8080/swagger-ui.htm\
+  -H 'Authorization: Bearer aafbea58-a49e-4924-8a58-cb4e217abe02'

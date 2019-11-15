@@ -1,0 +1,92 @@
+// REQUEST PARA GERAR O TOKEN PARA CONSULTAR A API
+curl -X POST \
+  http://localhost:8080/oauth/token
+  -H 'Authorization: Basic cGVkaWRvVGVzdGU6YTEzNDE1OGEtZGZkNy00MWYyLTg1OGMtOTk4MzQxNzAzNTE2' \
+  -F grant_type=password \
+  -F username=testeAPI \
+  -F password=46746
+  
+// REQUEST PARA GET LIST PEDIDOS (TESTE)
+ curl -X GET \
+  http://localhost:8080/pedidos
+  -H 'Authorization: Bearer 78d4112c-b9e5-4607-ad16-a0bcc77176a3'
+  
+// REQUEST PARA CONSULTAR O SWAGGER
+curl -X GET \
+  http://localhost:8080/swagger-ui.htm\
+  -H 'Authorization: Bearer aafbea58-a49e-4924-8a58-cb4e217abe02'
+  
+// REQUEST PARA GERAR OS PEDIDOS DA BASE
+curl -X POST \
+  http://localhost:8080/pedido
+  -H 'Authorization: Bearer 78d4112c-b9e5-4607-ad16-a0bcc77176a3' \
+  -d '{
+    "pedidos": [
+        {
+            "id": "64535424",
+            "cliente": "Marcus Beira-Mar",
+            "dt": "2019-11-14 18:30:45.000",
+            "vlrTotal": 12.43,
+            "items": [
+                {
+                    "id": "245245",
+                    "nome": "mouse sem fio",
+                    "qtd": 3,
+                    "vlrUnitario": 12.43,
+                    "vlrTotal": 37.29
+                }
+            ]
+        },
+        {
+            "id": "35668768",
+            "cliente": "Anderson Almeida",
+            "dt": "2019-11-14 19:23:45.356",
+            "vlrTotal": 1013.14,
+            "items": [
+                {
+                    "id": "67843",
+                    "nome": "teclado sem fio",
+                    "qtd": 12,
+                    "vlrUnitario": 23.19,
+                    "vlrTotal": 278.28
+                },
+                {
+                    "id": "356356",
+                    "nome": "notebook",
+                    "qtd": 2,
+                    "vlrUnitario": 367.43,
+                    "vlrTotal": 734.86
+                }
+            ]
+        },
+        {
+            "id": "95674573",
+            "cliente": "Martha da Costa",
+            "dt": "2019-11-14 21:33:35.964",
+            "vlrTotal": 458.85,
+            "items": [
+                {
+                    "id": "245245",
+                    "nome": "mouse sem fio",
+                    "qtd": 7,
+                    "vlrUnitario": 12.43,
+                    "vlrTotal": 87.01
+                },
+                {
+                    "id": "467",
+                    "nome": "fone de ouvido sem fio",
+                    "qtd": 1,
+                    "vlrUnitario": 78.99,
+                    "vlrTotal": 78.99
+                },
+                {
+                    "id": "356356",
+                    "nome": "notebook",
+                    "qtd": 1,
+                    "vlrUnitario": 367.43,
+                    "vlrTotal": 367.43
+                }
+            ]
+        }
+    ]
+}'
